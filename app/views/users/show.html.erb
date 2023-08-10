@@ -8,6 +8,9 @@
     </div>
 
     <div class="col-md-8 offset-md-1">
+      <h3>
+        <%= link_to 'Bookmarks', user_bookmarks_path(@user) %>
+      </h3>
       <!--ユーザーが投稿した本の一覧機能-->
       <%= render 'books/index', books: @books %>
     </div>
